@@ -1,0 +1,16 @@
+=== GPU Check ===
+
+PyTorch version: 2.14.1+cu126
+CUDA available: True
+CUDA version: 12.6
+GPU: NVIDIA GeForce GTX 1080 Ti
+Memory: 11.7 GB
+Compute capability: 6.1
+
+=== CPU vs GPU Benchmark ===
+
+CPU matrix multiply (4000x4000): 0.401s
+GPU matrix multiply (4000x4000): 0.058s
+Speedup: 7x
+
+Estimated max model size (fp16): ~6B parameters
