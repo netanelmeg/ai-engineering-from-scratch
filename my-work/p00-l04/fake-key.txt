@@ -1,0 +1,30 @@
+=== API Calls ===
+
+1. Using the SDK:
+Install the SDK: pip install anthropic
+
+2. Using raw HTTP:
+Traceback (most recent call last):
+  File "/home/netanel/ai-engineering-from-scratch/phases/00-setup-and-tooling/04-apis-and-keys/code/first_api_call.py", line 55, in <module>
+    call_raw_http()
+  File "/home/netanel/ai-engineering-from-scratch/phases/00-setup-and-tooling/04-apis-and-keys/code/first_api_call.py", line 44, in call_raw_http
+    with urllib.request.urlopen(req) as resp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/netanel/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/urllib/request.py", line 215, in urlopen
+    return opener.open(url, data, timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/netanel/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/urllib/request.py", line 521, in open
+    response = meth(req, response)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/netanel/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/urllib/request.py", line 630, in http_response
+    response = self.parent.error(
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/netanel/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/urllib/request.py", line 559, in error
+    return self._call_chain(*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/netanel/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/urllib/request.py", line 492, in _call_chain
+    result = func(*args)
+             ^^^^^^^^^^^
+  File "/home/netanel/.local/share/uv/python/cpython-3.12.14-linux-x86_64-gnu/lib/python3.12/urllib/request.py", line 639, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 401: Unauthorized
